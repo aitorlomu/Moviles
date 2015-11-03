@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Actividad_1</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="btMostrar">Mostrar</string>
+    <string name="txtMostrarHint">Escriba aquí su nombre</string>
+    <string name="tvTextoRecibido">El texto recibido es:</string>
+
+</resources>

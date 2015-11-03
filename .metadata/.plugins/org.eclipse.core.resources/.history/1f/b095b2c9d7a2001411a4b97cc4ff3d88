@@ -1,0 +1,17 @@
+package com.ies.gestorpalabras;
+
+import android.content.ContentResolver;
+
+public class GestorPalabras {
+
+	private ContentResolver cr;
+	
+	public GestorPalabras(ContentResolver cr){
+		this.cr=cr;
+	}
+	
+	public void anadirPalabra(String palabra){
+		
+	}
+	
+}

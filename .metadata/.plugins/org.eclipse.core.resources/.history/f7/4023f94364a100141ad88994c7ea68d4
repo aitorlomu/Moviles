@@ -1,0 +1,35 @@
+package com.ies.accesocontactos;
+
+import android.content.ContentResolver;
+import android.database.Cursor;
+import android.net.Uri;
+import android.provider.ContactsContract;
+import android.util.Log;
+
+public class GestorContactos {
+
+	public GestorContactos(ContentResolver cr){
+		Uri uriContactos;
+		uriContactos=ContactsContract.Data.CONTENT_URI;
+		Log.d("DEBUG","Gestor contactos construido");
+		Log.d("DEBUG","La URI es: "+uriContactos.toString());
+		
+		String[] campos={
+				ContactsContract.Data.DISPLAY_NAME
+		};
+		
+		Cursor cursor=cr.query(uriContactos, campos, null, null, null);
+		int numContactos=cursor.getCount();
+		Log.d("DEBUG","En este teléfono hay: "+numContactos+" contactos");
+		while(!cursor.isAfterLast()){
+			Log.d("DEBUG","Intentando leer");
+			int posNombre=cursor.getColumnIndex(ContactsContract.Data.DISPLAY_NAME);	
+			if (posNombre!=-1){
+				String nombre=cursor.getString(posNombre);
+				Log.d("DEBUG","Nombre: "+nombre);
+			}
+			
+			cursor.moveToNext();
+		}
+	}
+}

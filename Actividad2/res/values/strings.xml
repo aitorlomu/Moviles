@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Actividad2</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="cadIntrNum">Introduzca un número</string>
+    <string name="cadOpera">Introduzca un operador</string>
+    <string name="cadButCal">Calcular</string>
+    <string name="cadRadS">Suma</string>
+    <string name="cadRadRes"></string>
+    <string name="cadRadMul">Multiplicación</string>
+    <string name="cadRadResta">Resta</string>
+    <string name="cadRadDiv">Division</string>
+
+</resources>

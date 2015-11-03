@@ -1,0 +1,78 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.ies.examenejercicio1.ActividadDeposito" >
+
+    <RadioGroup
+        android:id="@+id/rbGrDepositos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="59dp" >
+
+        <RadioButton
+            android:id="@+id/rbStar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/cadrbStar" />
+
+        <RadioButton
+            android:id="@+id/rbConfianza"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cadrbConfianza" />
+
+        <RadioButton
+            android:id="@+id/rbJoven"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cadrbJoven" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btParametros"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/rbGrDepositos"
+        android:layout_alignRight="@+id/rbGrDepositos"
+        android:layout_centerVertical="true"
+        android:onClick="seleccionarDeposito"
+        android:text="@string/cadbtParametros" />
+
+    <Button
+        android:id="@+id/btCalcular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btParametros"
+        android:layout_alignRight="@+id/btParametros"
+        android:layout_below="@+id/btParametros"
+        android:onClick="calcularBeneficios"
+        android:text="@string/cadbtCalcular" />
+
+    <TextView
+        android:id="@+id/tvtusbene"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/btCalcular"
+        android:layout_marginLeft="21dp"
+        android:layout_marginTop="21dp"
+        android:text="@string/cadtvbene" />
+
+    <TextView
+        android:id="@+id/tvBeneficios"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvtusbene"
+        android:layout_below="@+id/tvtusbene"
+        android:text="€"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</RelativeLayout>

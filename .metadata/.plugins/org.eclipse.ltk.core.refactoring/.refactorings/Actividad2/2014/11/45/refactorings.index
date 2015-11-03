@@ -1,0 +1,13 @@
+1415347975125	Change Layout
+1415349340113	Change Layout
+1415349528970	Extracts string 'null' into R.string.cadIntrNum
+1415349556622	Extracts string 'null' into R.string.cadOpera
+1415349643905	Extracts string 'null' into R.string.cadButCal
+1415349773108	Rename field 'editText1'
+1415349779824	Rename field 'editText3'
+1415349787818	Rename field 'editText2'
+1415352066674	Extracts string 'null' into R.string.cadRadS
+1415352075741	Extracts string 'null' into R.string.cadRadRes
+1415352088741	Extracts string 'null' into R.string.cadRadMul
+1415352102963	Extracts string 'null' into R.string.cadRadResta
+1415352112677	Extracts string 'null' into R.string.cadRadDiv

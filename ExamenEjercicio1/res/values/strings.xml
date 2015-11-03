@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ExamenEjercicio1</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="cadrbStar">Depósito Star</string>
+    <string name="cadrbConfianza">Depósito Confianza</string>
+    <string name="cadrbJoven">Depósito Joven Ahorrador</string>
+    <string name="cadbtParametros">Parámetros del depósito</string>
+    <string name="cadbtCalcular">Calcular beneficios</string>
+    <string name="cadtvbene">Tus beneficios son:</string>
+    <string name="title_activity_actividad_parametros">ActividadParametros</string>
+    <string name="cadtvanios">Años (de 1 a 20)</string>
+    <string name="cadTvEuros">Miles de euros (de 1 a 50)</string>
+    <string name="cadBtVolver">Volver</string>
+
+</resources>

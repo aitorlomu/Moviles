@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">001-ActividadTruncadora</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="cadHintIntrod">Introduzca el número de carácteres a truncar</string>
+    <string name="cadHintIntro">Nº de carácteres a truncar</string>
+    <string name="caDNotRes"></string>
+    <string name="cadNotRes">El resultado es:</string>
+    <string name="cadPrueba">Prueba</string>
+
+</resources>

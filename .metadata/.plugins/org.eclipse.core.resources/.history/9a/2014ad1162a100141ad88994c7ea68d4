@@ -1,0 +1,20 @@
+package com.ies.accesocontactos;
+
+import android.net.Uri;
+import android.provider.ContactsContract;
+import android.util.Log;
+
+public class GestorContactos {
+
+	public GestorContactos(){
+		Uri uriContactos;
+		uriContactos=ContactsContract.Data.CONTENT_URI;
+		Log.d("DEBUG","Gestor contactos construido");
+		Log.d("DEBUG","La URI es: "+uriContactos.toString());
+		
+		String[] campos={
+				ContactsContract.Data.DISPLAY_NAME
+		};
+		
+	}
+}

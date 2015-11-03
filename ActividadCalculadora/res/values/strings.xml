@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Actividades2</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="cadNum1">8.25</string>
+    <string name="cadNum2">-3.42</string>
+    <string name="cadSuma">+</string>
+    <string name="cadResta">-</string>
+    <string name="cadMulti">x</string>
+    <string name="cadDiv">/</string>
+    <string name="cadCalcular">¡Calcula!</string>
+
+</resources>

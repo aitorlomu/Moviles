@@ -1,0 +1,49 @@
+package com.ies.accesocontactos;
+
+import android.content.ContentResolver;
+import android.database.Cursor;
+import android.net.Uri;
+import android.provider.ContactsContract;
+import android.telephony.TelephonyManager;
+import android.util.Log;
+
+public class GestorContactos {
+
+	public GestorContactos(ContentResolver cr){
+		Uri uriContactos;
+		uriContactos=ContactsContract.Data.CONTENT_URI;
+		Log.d("DEBUG","Gestor contactos construido");
+		Log.d("DEBUG","La URI es: "+uriContactos.toString());
+		
+		String[] campos={
+				ContactsContract.Data.DISPLAY_NAME,
+				ContactsContract.Data.DATA1,
+				ContactsContract.Data.MIMETYPE
+				
+		};
+		
+		Cursor cursor=cr.query(uriContactos, campos, null, null, null);
+		int numContactos=cursor.getCount();
+		cursor.moveToFirst();
+		Log.d("DEBUG","En este teléfono hay: "+numContactos+" contactos");
+		while(!cursor.isAfterLast()){
+			//Log.d("DEBUG","Intentando leer");
+			int posNombre=cursor.getColumnIndex(ContactsContract.Data.DISPLAY_NAME);	
+			int posTipo=cursor.getColumnIndex(ContactsContract.Data.MIMETYPE);
+			String tipo=cursor.getString(posTipo);
+			
+			//if(tipo.equals(ContactsContract.CommonDataKinds.Email.CONTENT_ITEM_TYPE)){
+				Log.d("DEBUG","El nombre esta en la pos:"+posNombre);
+				String nombre=cursor.getString(posNombre);
+				Log.d("DEBUG","Nombre: "+nombre);
+					
+				int posData1=cursor.getColumnIndex(ContactsContract.Data.DATA1);
+				String data1=cursor.getString(posData1);
+				Log.d("DEBUG","El data 1 contiente: "+data1);
+			//}
+			
+			
+			cursor.moveToNext();
+		}
+	}
+}

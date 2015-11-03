@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Ruleta</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="cadBtPar">Par</string>
+    <string name="cadbtPar">Par</string>
+    <string name="cadbtImpar">Impar</string>
+    <string name="cadbt1doc">1ª Docena</string>
+    <string name="cadbt2doc">2ª Docena</string>
+    <string name="cadbt3doc">3ª Docena</string>
+    <string name="cadRecargar">Recargue 100€ de saldo</string>
+
+</resources>
